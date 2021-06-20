@@ -80,13 +80,13 @@ function deleted(i) {
 }
 
 
-/* 计时器 */
+/* Timer */
 var h = 0;
 var m = 0;
 var s = 0;
 var start = false;
 var init;
-/* 格式化显示时间 */
+/* Format time */
 function timers() {
   s = s + 1;
   if (s >= 60) {
@@ -101,7 +101,7 @@ function timers() {
   document.getElementById('_m').innerHTML = `${m < 10 ? ('0' + m) : m}`/* 分 */
   document.getElementById('_s').innerHTML = `${s < 10 ? ('0' + s) : s} `/* 秒 */
 }
-// 开始计时器
+// Start Timer
 function starttime() {
   if (start == false) {
 
@@ -109,12 +109,11 @@ function starttime() {
   }
 
 }
-
-/* 停止计时 */
+/* Stop Timer */
 function stoptime() {
   window.clearInterval(init)
 }
-/* 重置计时 */
+/* Reset Timer */
 function restarttime() {
   window.clearInterval(init);
   h = 0;
@@ -126,7 +125,7 @@ function restarttime() {
 
 }
 
-/* 音频播放 */
+/* Music Player */
 var videoVolume = 1.0;
 var audio = document.querySelector('#audio'),
   audioTimeBar = document.querySelector('#audioTimeBar'),
@@ -200,7 +199,7 @@ function formatTime(s) {
   var s = (s >= 10) ? s : "0" + s;
   return m + ":" + s;
 }
-/* 歌词显示隐藏 */
+/* lyric hidden */
 lyrics_button.addEventListener('click', function () {
   var txt = lyrics_button.innerHTML;
   console.log(txt)
