@@ -1,0 +1,338 @@
+h1 {
+  font-size: 40px;
+  line-height: 90px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 60px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+#taskform {
+  padding: 30px;
+  background-color: #fff;
+  margin: 30px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-sizing: 0px 0px 2px 3px #ccc;
+}
+.inputline {
+  padding: 20px 0;
+}
+.inputline .tit {
+  font-size: 20px;
+  line-height: 40px;
+  color: #333;
+  text-align: right;
+  width: 200px;
+  display: inline-block;
+  padding-right: 30px;
+}
+.inputline input,
+.inputline select {
+  font-size: 14px;
+  line-height: 40px;
+  color: #333;
+  padding-left: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#taskform {
+  max-width: 900px;
+  margin: auto;
+}
+#taskform button[type='submit'] {
+  cursor: pointer;
+  border: none;
+  line-height: 36px;
+  font-size: 12px;
+  padding: 0 30px;
+  color: #fff;
+  width: 96px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  background-image: -moz-linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  background-image: -webkit-linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  background-image: -ms-linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  background-image: linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  border-radius: 6px;
+}
+/* 任务列表 */
+.content {
+  max-width: 900px;
+  margin: auto;
+}
+.content .card {
+  max-width: 300px;
+}
+#tasklist {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+#tasklist tr th {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #333;
+}
+/* 运动计时器 */
+.showtime {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 30px 0;
+}
+.stopbtns {
+  margin: 30px auto;
+}
+.stopbtns a {
+  line-height: 36px;
+  font-size: 12px;
+  padding: 0 10px;
+  color: #fff;
+  max-width: 96px;
+  text-align: center;
+  margin: 0 auto;
+  background-image: -moz-linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  background-image: -webkit-linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  background-image: -ms-linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  background-image: linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  border-radius: 6px;
+  display: block;
+  margin: auto;
+}
+/* 音乐播放器 */
+.audiobox .tit {
+  padding: 0 30px;
+  font-size: 24px;
+  line-height: 40px;
+  padding: 30px;
+  color: #fff;
+  text-align: left;
+}
+.audiobox #audio {
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+.audiobox .png {
+  width: 200px;
+  display: block;
+  margin: 30px auto;
+}
+.audiobox .mainaudio {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 60px 0;
+}
+.audiobox .mainaudio #audio {
+  padding: 0 60px;
+  background-color: #f1f2f4;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.audiobox .lyrics-button {
+  line-height: 36px;
+  font-size: 12px;
+  padding: 0 30px;
+  color: #fff;
+  width: 96px;
+  text-align: center;
+  margin: 0 30px;
+  background-image: -moz-linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  background-image: -webkit-linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  background-image: -ms-linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  background-image: linear-gradient(90deg, #a931e5 0%, #5708fa 100%);
+  border-radius: 6px;
+  display: block;
+  margin: auto;
+}
+.audiobox .lyrics.hidden {
+  display: none;
+}
+.audiobox .lyrics {
+  display: block;
+}
+.audiobox .lyrics h3 {
+  padding: 30px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  font-size: 26px;
+  line-height: 40px;
+}
+.audiobox .lyrics p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  margin: 20px 0;
+  color: #333;
+}
+#audioControls {
+  max-width: 520px;
+  height: 40px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: block;
+  margin: 30px auto;
+  background-color: #f1f2f4;
+  justify-content: space-around;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+#audioControls #audioDuration,
+#audioControls #audioCurrentTime {
+  color: #333;
+}
+#audioControls .playbtn {
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  margin-top: 4px;
+  float: left;
+}
+#audioControls .mute {
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  margin-top: 4px;
+  float: left;
+}
+#audioControls .playbtn.play {
+  background: transparent url('../images/bofang.png') no-repeat center scroll;
+  background-size: cover;
+}
+#audioControls .playbtn.pause {
+  background: transparent url('../images/timeout.png') no-repeat center scroll;
+  background-size: cover;
+}
+#audioControls .mute.open {
+  background: transparent url('../images/yinliang.png') no-repeat center scroll;
+  background-size: 24px;
+}
+#audioControls .mute.close {
+  background: transparent url('../images/jingyin.png') no-repeat center scroll;
+  background-size: 24px;
+}
+#audioControls #audioPlayPause img,
+#audioControls #audioMute img {
+  height: 3rem;
+}
+#audioControls #audioTime {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 0 30px;
+  margin-top: 4px;
+}
+#audioControls #audioVolumeBar {
+  width: 80px;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+#audioControls #audioTimeBar {
+  outline: none;
+  -webkit-appearance: none;
+  width: 160px;
+  height: 2px;
+  margin: 20px 0 0 10px;
+  order: -1;
+}
+#audioControls #audioTimeBar::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(13, 13, 13, 0);
+  background: #999;
+  border-radius: 2.9px;
+}
+#audioControls #audioTimeBar::-webkit-slider-thumb {
+  border: 0px solid #000000;
+  height: 4px;
+  width: 4px;
+  border-radius: 3px;
+  background: #000;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 0;
+}
+#audioControls #audioTimeBar:focus::-webkit-slider-runnable-track {
+  background: #999;
+  border: none;
+}
+#audioControls #audioTimeBar::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: white;
+  border-radius: 2.9px;
+  border: none;
+}
+#audioControls #audioTimeBar::-moz-range-thumb {
+  border: none;
+  height: 2px;
+  width: 4px;
+  border-radius: 3px;
+  background: #c183b1;
+  cursor: pointer;
+}
+#audioControls #audioTimeBar::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+#audioControls #audioTimeBar::-ms-fill-lower {
+  background: white;
+  border: none;
+  border-radius: 5.8px;
+}
+#audioControls #audioTimeBar::-ms-fill-upper {
+  background: white;
+  border: none;
+  border-radius: 5.8px;
+}
+#audioControls #audioTimeBar::-ms-thumb {
+  border: none;
+  height: 2px;
+  width: 4px;
+  border-radius: 3px;
+  background: #c183b1;
+  cursor: pointer;
+  height: 41.3px;
+}
+#audioControls #audioTimeBar:focus::-ms-fill-lower {
+  background: white;
+}
+#audioControls #audioTimeBar:focus::-ms-fill-upper {
+  background: white;
+}
+/* 顶部 */
+.toptag {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 999999;
+}
+.toptag .btn {
+  font-size: 14px;
+  line-height: 60px;
+  color: #333;
+  background-color: #fff;
+}
