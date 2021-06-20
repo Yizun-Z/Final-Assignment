@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Task Master</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+<body>
+  <div class="toptag btn-group">
+    <a href="#Task" class="btn">Task List</a>
+    <a href="#Stopwatch" class="btn">Stopwatch Timer</a>
+    <a href="#Music" class="btn">Music Player</a>
+  </div>
+  <h1 id="Task">Task List</h1>
+  <form id="taskform">
+    <div class="inputline btn-group">
+      <span class="tit">Task Name</span>
+      <input type="text" name="task" class="btn" id="taskInput" value="123">
+    </div>
+    <div class="inputline btn-group">
+      <span class="tit">Task Description</span>
+      <input type="text" name="task" class="btn" id="taskdesc" value="111111111111111">
+    </div>
+    <div class="inputline btn-group">
+      <span class="tit">Due Date:</span>
+      <input type="date" name="dueDate" class="btn" id="dueDateInput" value="2020-01-01">
+    </div>
+    <div class="inputline btn-group">
+      <span class="tit">completion Time:</span>
+      <input type="time" name="completionTime" class="btn" id="completionTimeInput" value="09:54">
+    </div>
+    <div class="inputline btn-group">
+      <span class="tit">Estimated completion time (in mins):</span>
+      <input type="number" name="estimatedTime" class="btn" id="estimatedTimeInput" value="30">
+    </div>
+    <div class="inputline btn-group">
+      <span class="tit">Task Priority:</span>
+      <select name="prority" id="priorityInput" class="btn">
+        <option value="">Choose one</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <h2>list</h2>
+  <!-- Main content -->
+  <main class="content">
+  </main>
+  <hr>
+  <h1 id="Stopwatch">Stopwatch Timer</h1>
+  <div class="showtime">
+    <span id="_h">00</span>:
+    <span id="_m">00</span>:
+    <span id="_s">00</span>
+  </div>
+  <div class="btn-group stopbtns">
+    <div class="btn">
+      <a href="javascript:;" onclick="starttime()">start</a>
+    </div>
+    <div class="btn">
+      <a href="javascript:;" onclick="stoptime()">stop</a>
+    </div>
+    <div class="btn">
+      <a href="javascript:;" onclick="restarttime()">reset</a>
+    </div>
+  </div>
+  <hr>
+  <h1 id="Music">Music Player</h1>
+  <div class="audiobox">
+    <p class="tit">Recommended Music:</p>
+    <img class="png" src="./images/music.jpg" alt="music cover pic">
+    <section class="mainaudio">
+      <audio id="audio" controls controlsList="nodownload" style="display: none;"
+        src="./audio/'City of Stars' (Duet ft. Ryan Gosling, Emma Stone) - La La Land Original Motion Picture Soundtr.mp3">
+      </audio>
+    </section>
+    <section id="audioControls" class="fn-clear">
+      <a href="javascript:;" id="audioPlayPause" class="fl playbtn play"></a>
+      <section id="audioTime" class="fl"><span id="audioCurrentTime">00:00</span>/<span id="audioDuration"></span>
+      </section>
+      <input class="fl" type="range" id="audioTimeBar" value="0">
+      <a href="javascript:;" class="mute open" id="audioMute"></a>
+      <input type="range" id="audioVolumeBar" min="0" max="1" step="0.1" value="0">
+    </section>
+
+    <a href="javascript:;" class="lyrics-button">Hide lyrics</a>
+
+    <section class="lyrics">
+      <h3 class="hidden">"City Of Stars"</h3>
+
+      <p>(performed by Ryan Gosling & Emma Stone)<br>
+        (from "La La Land" soundtrack)<br>
+      </p>
+
+      <p>[Sebastian:]<br>
+        City of stars<br>
+        Are you shining just for me?<br>
+        City of stars<br>
+        There's so much that I can't see<br>
+        Who knows?<br>
+        I felt it from the first embrace I shared with you<br>
+      </p>
+
+      <p>[Mia:]<br>
+        That now our dreams may finally come true<br>
+      </p>
+
+      <p>City of stars<br>
+        Just one thing everybody wants<br>
+        There in the bars<br>
+        And through the smokescreen of the crowded restaurants<br>
+        It's love<br>
+        Yes, all we're looking for is love from someone else<br>
+      </p>
+
+      <p>[Sebastian:]<br>
+        A rush<br>
+      </p>
+      <p>[Mia:]<br>
+        A glance<br>
+      </p>
+      <p>[Sebastian:]<br>
+        A touch<br>
+      </p>
+      <p>[Mia:]<br>
+        A dance<br>
+      </p>
+
+      <p>[Both:]<br>
+        A look in somebody's eyes<br>
+        To light up the skies<br>
+        To open the world and send it reeling<br>
+        A voice that says, I'll be here<br>
+        And you'll be alright<br>
+      </p>
+
+      <p>
+        I don't care if I know<br>
+        Just where I will go<br>
+        'Cause all that I need's this crazy feeling<br>
+        A rat-tat-tat on my heart<br>
+      </p>
+
+      <p>[Sebastian:]<br>
+        Think I want it to stay<br>
+      </p>
+
+      <p>City of stars<br>
+        Are you shining just for me?<br>
+        City of stars<br>
+      </p>
+
+      <p>[Mia:]<br>
+        You never shined so brightly<br>
+      </p>
+
+      <p>
+        Source: LyricFind<br>
+        Songwriters: Justin Hurwitz / Benj Pasek / Justin Noble Paul<br>
+        City Of Stars lyrics © Warner Chappell Music, Inc, Universal Music Publishing Group<br>
+      </p>
+
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
